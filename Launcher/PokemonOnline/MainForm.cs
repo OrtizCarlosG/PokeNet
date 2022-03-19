@@ -28,30 +28,5 @@ namespace PokemonOnline
             //Merge("D:\\Pokemon Project\\Other pokemons\\POKEMONGREEN SERVER + CLIENT\\Client\\PokemonClient.jar");
 
         }
-        private void Merge(string strPath)
-        {
-            var processInfo = new ProcessStartInfo("C:\\Program Files\\Java\\jdk1.6.0_24\\binjava.exe", "-jar app.jar")
-            {
-                CreateNoWindow = true,
-                UseShellExecute = false
-            };
-
-            processInfo.WorkingDirectory = strPath; // this is where your jar file is.
-            Process proc;
-
-            if ((proc = Process.Start(processInfo)) == null)
-            {
-                throw new InvalidOperationException("??");
-            }
-
-            proc.WaitForExit();
-            int exitCode = proc.ExitCode;
-            proc.Close();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
