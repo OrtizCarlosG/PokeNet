@@ -25,7 +25,6 @@ namespace PokemonOnline
             myprocess.StartInfo.FileName = "java";
             myprocess.StartInfo.Arguments = "-jar -Djava.library.path=lib/native PokemonClient.jar";
             myprocess.Start();
-            //Merge("D:\\Pokemon Project\\Other pokemons\\POKEMONGREEN SERVER + CLIENT\\Client\\PokemonClient.jar");
 
         }
     }
