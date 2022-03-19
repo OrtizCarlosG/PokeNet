@@ -61,37 +61,6 @@ namespace PokemonServer.Class
                 SendTCPData(_toClient, _packet);
             }
         }
-
-        public static void sendBanPacket(int _toClient, string reason, bool isPermabanned, string _until)
-        {
-            using (Packet _packet = new Packet((int)ServerPackets.banResult))
-            {
-                _packet.Write(reason);
-                _packet.Write(isPermabanned);
-                _packet.Write(_until);
-                SendTCPData(_toClient, _packet);
-            }
-        }
-
-        public static void sendClientKey(int _toClient, string code)
-        {
-            using (Packet _packet = new Packet((int)ServerPackets.clientKey))
-            {
-                _packet.Write(code);
-
-                SendTCPData(_toClient, _packet);
-            }
-        }
-
-        public static void sendProfilePhoto(int _toClient, string image)
-        {
-            using (Packet _packet = new Packet((int)ServerPackets.profileImage))
-            {
-                _packet.Write(image);
-
-                SendTCPData(_toClient, _packet);
-            }
-        }
         #endregion
     }
 }

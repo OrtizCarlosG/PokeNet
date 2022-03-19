@@ -9,20 +9,14 @@ namespace PokemonServer.Class
     {
         serverID,
         loginResult,
-        registerResult,
-        banResult,
-        clientKey,
-        profileImage
+        registerResult
     }
 
     /// <summary>Sent from client to server.</summary>
     public enum ClientPackets
     {
         login,
-        register,
-        startAcc,
-        profileImage,
-        changeImage
+        register
     }
 
     public class Packet : IDisposable

@@ -32,33 +32,6 @@ namespace PokemonOnline.Connections
                 SendTCPData(_packet);
             }
         }
-
-
-        public static void StartAccount()
-        {
-            using (Packet _packet = new Packet((int)ClientPackets.startAcc))
-            {
-                _packet.Write(Globals.getCPUId());
-                SendTCPData(_packet);
-            }
-        }
-
-        public static void getProfileImage()
-        {
-            using (Packet _packet = new Packet((int)ClientPackets.profileImage))
-            {
-                SendTCPData(_packet);
-            }
-        }
-
-        public static void changeProfileImage(string _image)
-        {
-            using (Packet _packet = new Packet((int)ClientPackets.changeImage))
-            {
-                _packet.Write(_image);
-                SendTCPData(_packet);
-            }
-        }
         #endregion
     }
 }

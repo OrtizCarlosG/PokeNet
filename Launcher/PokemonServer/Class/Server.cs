@@ -77,11 +77,7 @@ namespace PokemonServer.Class
 
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
-                { (int)ClientPackets.login, ServerHandle.LoginRecived },
-                { (int)ClientPackets.register, ServerHandle.RegisterRecived },
-                { (int)ClientPackets.startAcc, ServerHandle.AccountStartRecived },
-                { (int)ClientPackets.profileImage, ServerHandle.returnProfileImage },
-                { (int)ClientPackets.changeImage, ServerHandle.ChangeProfileImage }
+                { (int)ClientPackets.login, ServerHandle.LoginRecived }
             };
             Console.WriteLine("Initialized packets.");
         }

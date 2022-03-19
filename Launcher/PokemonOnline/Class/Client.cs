@@ -187,10 +187,7 @@ namespace PokemonOnline.Connections
             packetHandlers = new Dictionary<int, PacketHandler>()
         {
             { (int)ServerPackets.serverID, ClientHandle.getID },
-            { (int)ServerPackets.loginResult, ClientHandle.loginResult },
-            { (int)ServerPackets.banResult, ClientHandle.banResult },
-            { (int)ServerPackets.clientKey, ClientHandle.ClientCode },
-            { (int)ServerPackets.profileImage, ClientHandle.drawImage }
+            { (int)ServerPackets.loginResult, ClientHandle.loginResult }
         };
         }
 

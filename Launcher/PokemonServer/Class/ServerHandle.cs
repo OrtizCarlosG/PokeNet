@@ -44,36 +44,5 @@ namespace PokemonServer.Class
               
             }
         }
-
-        public static void RegisterRecived(int _fromClient, Packet _packet)
-        {
-            string _account = _packet.ReadString();
-            string _password = _packet.ReadString();
-            string _repass = _packet.ReadString();
-            if (_password.Equals(_repass))
-            {
-              
-            }
-        }
-
-        public static void AccountStartRecived(int _fromClient, Packet _packet)
-        {
-            string _hwid = _packet.ReadString();
-            string _ip = Server.RemovePort(Server.clients[_fromClient].tcp.socket.Client.RemoteEndPoint.ToString());
-            Globals.getForm().addToLog($"HWID {_hwid} launched the game");
-            string _code = Client.RandomString(15);
-          
-        }
-
-        public static void returnProfileImage(int _fromClient, Packet _packet)
-        {
-           
-        }
-
-        public static void ChangeProfileImage(int _fromClient, Packet _packet)
-        {
-          
-        }
-
     }
 }
