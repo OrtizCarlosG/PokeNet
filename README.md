@@ -1,4 +1,4 @@
-**Codigos originales: <a href="https://bitbucket.org/Myth1c/pokemonium/src/master/">Max Maes</a>**
+**Codigos originales: <a href="https://bitbucket.org/Myth1c/pokemonium/src/master/">Pokemonium</a>**
 # Cliente
 Se utilizo el cliente de pokenet como una practica divertida para programar en java. El plan original fue tomar este mismo e intentar solucionar la mayor cantidad de bugs que se encuentren asi como tambien agregar nuevas implementaciones.
 # Launcher
