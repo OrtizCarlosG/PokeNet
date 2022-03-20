@@ -5,17 +5,18 @@ Se utilizo el cliente de pokenet como una practica divertida para programar en j
 Se diseñó un launcher con un sistema cliente/servidor para este juego. La idea es que solamente tenga funciones simples, tales como las de registro y las de inicio de sesión. Esto se hizo porque la forma original para ejecutar el archivo .jar del cliente era a través de una consola de comandos."
 
 # Paquetes de el servidor.
-- Server ID: trae consigo nuestro id dentro de el servidor del launcher.
-- Login result: trae consigo una booleana(true/false) con el resultado del inicio de sesion.
-- Register result: traera consigo una booleana(true/false) para saber si el registro fue exitoso o no.
+- Server ID: trae consigo nuestro id dentro del servidor del launcher.
+- Login result: trae consigo una booleana (true/false) con el resultado del inicio de sesión.
+- Register result: trae consigo una booleana (true/false) para saber si el registro fue o no exitoso.
 
 # Paquetes del cliente.
-- Login: enviara al servidor nuestro id, hwid, usuario y contraseña para iniciar sesion.
-- Register: enviara al servidor todos los datos necesarios para realizar un registro.
+- Login: enviará al servidor nuestro "id", "hwid", "usuario" y "contraseña" para iniciar sesión.
+- Register: enviará al servidor todos los datos necesarios para realizar un registro.
 
-Se planea para un futuro combinar las tecnologias de el launcher y el cliente java de pokenet para que los usuarios no tengan que volver a iniciar sesion una vez iniciado el juego, esto se hara utilizando una "key" genera para el usuario y su hwid.
+Se planea para un futuro combinar las tecnologias del launcher y del cliente Java de Pokenet para que los usuarios no tengan que volver a iniciar sesion una vez iniciado el juego. Esto se hará utilizando una "key" genera para el usuario y su "hwid"."
 
-## Imagenes del cliente
+
+## Muestra del cliente
 ![Cliente del launcher](https://i.imgur.com/s5wYyqR.gif)
 
 # Servidor
