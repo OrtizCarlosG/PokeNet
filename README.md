@@ -2,8 +2,7 @@
 # Cliente
 Se utilizo el cliente de pokenet como una practica divertida para programar en java. El plan original fue tomar este mismo e intentar solucionar la mayor cantidad de bugs que se encuentren asi como tambien agregar nuevas implementaciones.
 # Launcher
-Se diseño un launcher con un sistema cliente/servidor para este juego la idea es que solo tenga funciones simples tales como las de registro y las de inicio de sesion.
-Esto se hizo ya que la forma original para ejecutar el archivo jar del cliente era a través de una consola de comandos.
+Se diseñó un launcher con un sistema cliente/servidor para este juego. La idea es que solamente tenga funciones simples, tales como las de registro y las de inicio de sesión. Esto se hizo porque la forma original para ejecutar el archivo .jar del cliente era a través de una consola de comandos."
 
 # Paquetes de el servidor.
 - Server ID: trae consigo nuestro id dentro de el servidor del launcher.
